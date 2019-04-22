@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[CVE-2019-9730]]></title>
-    <url>%2F2019%2F04%2F16%2FCVE-2019-9730%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[help]]></title>
+    <url>%2F2019%2F04%2F22%2Fhelp%2F</url>
+    <content type="text"><![CDATA[aaaa]]></content>
       <categories>
-        <category>提权</category>
+        <category>nothing</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[ciscn_2018_第十一届全国大学生信息安全竞赛writeup]]></title>
+    <url>%2F2019%2F04%2F16%2Fciscn-2018-%E7%AC%AC%E5%8D%81%E4%B8%80%E5%B1%8A%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AB%9E%E8%B5%9Bwriteup%2F</url>
+    <content type="text"><![CDATA[###easyweb]]></content>
+      <categories>
+        <category>writeup</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[CVE-2019-0232-windows下tomcat远程代码执行]]></title>
+    <url>%2F2019%2F04%2F16%2FCVE-2019-0232-windows%E4%B8%8Btomcat%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>远程代码执行</category>
       </categories>
       <tags>
-        <tag>windows提权</tag>
+        <tag>tomcat</tag>
       </tags>
   </entry>
 </search>
